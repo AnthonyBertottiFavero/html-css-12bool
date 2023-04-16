@@ -1,0 +1,28 @@
+.container {
+    margin-top: 1rem;
+}
+
+.row {
+    min-height: 3rem;
+}
+
+[class*="col-"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    padding: 1rem;
+    color: white;
+    background-color: #006bf8;
+    white-space: nowrap;
+}
+
+[class*="col-"][class*="nested"] {
+    color: white;
+    background-color: #00df64;
+    border-color: #006bf8;
+}
+
+[class*="-offset"] {
+    flex-grow: 1;
+}
